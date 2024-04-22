@@ -1,0 +1,94 @@
+:root {
+  --text-50: #ecebf9;
+  --text-100: #dad8f3;
+  --text-200: #b5b1e7;
+  --text-300: #8f8adb;
+  --text-400: #6a63cf;
+  --text-500: #453cc3;
+  --text-600: #37309c;
+  --text-700: #292475;
+  --text-800: #1c184e;
+  --text-900: #0e0c27;
+  --text-950: #070614;
+
+  --background-50: #ededf8;
+  --background-100: #dadaf1;
+  --background-200: #b5b5e3;
+  --background-300: #9090d5;
+  --background-400: #6b6bc7;
+  --background-500: #4646b9;
+  --background-600: #383894;
+  --background-700: #2a2a6f;
+  --background-800: #1c1c4a;
+  --background-900: #0e0e25;
+  --background-950: #070712;
+
+  --primary-50: #edecf9;
+  --primary-100: #dad8f3;
+  --primary-200: #b6b1e7;
+  --primary-300: #918bda;
+  --primary-400: #6d64ce;
+  --primary-500: #483dc2;
+  --primary-600: #3a319b;
+  --primary-700: #2b2574;
+  --primary-800: #1d184e;
+  --primary-900: #0e0c27;
+  --primary-950: #070613;
+
+  --secondary-50: #f9ecf4;
+  --secondary-100: #f3d8ea;
+  --secondary-200: #e7b1d5;
+  --secondary-300: #da8bc0;
+  --secondary-400: #ce64ab;
+  --secondary-500: #c23d96;
+  --secondary-600: #9b3178;
+  --secondary-700: #74255a;
+  --secondary-800: #4e183c;
+  --secondary-900: #270c1e;
+  --secondary-950: #13060f;
+
+  --accent-50: #f9ecee;
+  --accent-100: #f3d8dd;
+  --accent-200: #e7b1bb;
+  --accent-300: #da8b99;
+  --accent-400: #ce6477;
+  --accent-500: #c23d56;
+  --accent-600: #9b3144;
+  --accent-700: #742533;
+  --accent-800: #4e1822;
+  --accent-900: #270c11;
+  --accent-950: #130609;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--background-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: var(--text-50);
+}
+
+.container {
+  width: 75vw;
+  height: 85vh;
+  background-color: var(--primary-400);
+  border-radius: 12px;
+  backdrop-filter: blur(20px) saturate(180%);
+  display: flex;
+}
+
+.loading {
+  padding: 50px;
+  font-size: 36px;
+  border-radius: 10px;
+  background-color: var(--secondary-400);
+}
