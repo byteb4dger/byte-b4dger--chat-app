@@ -73,17 +73,27 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100svh;
   color: var(--text-50);
 }
 
 .container {
-  width: 75vw;
+  width: 60vw;
   height: 85vh;
   background-color: var(--primary-400);
   border-radius: 12px;
   backdrop-filter: blur(20px) saturate(180%);
   display: flex;
+
+  @media screen and (max-width: 1024px) {
+    width: 100vw;
+    height: 100svh;
+    border-radius: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .loading {
