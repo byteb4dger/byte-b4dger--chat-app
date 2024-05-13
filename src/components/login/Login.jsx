@@ -8,7 +8,6 @@ import {
 import { auth, db } from '../../lib/firebase';
 import { doc, setDoc } from 'firebase/firestore';
 import upload from '../../lib/upload';
-import { set } from 'firebase/database';
 const Login = () => {
   const [avatar, setAvatar] = useState({
     file: null,
@@ -80,7 +79,7 @@ const Login = () => {
   return (
     <div className="login">
       <div className="item">
-        <h2>Welcome back</h2>
+        <h2>Log In</h2>
         <form onSubmit={handleLogin}>
           <input type="text" placeholder="Email" name="email" />
           <input type="password" placeholder="Password" name="password" />
