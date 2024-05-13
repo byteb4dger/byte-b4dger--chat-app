@@ -37,7 +37,7 @@ const Detail = () => {
   return (
     <div className="detail">
       <div className="info">
-        <button onClick={handleBlock}>
+        <button className="block" onClick={handleBlock}>
           {isCurrentUserBlocked
             ? 'You are Blocked!'
             : isReceiverBlocked
