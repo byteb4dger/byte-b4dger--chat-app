@@ -6,6 +6,7 @@
     flex: auto;
     max-height: 25svh;
   }
+
   .search {
     display: flex;
     align-items: center;
