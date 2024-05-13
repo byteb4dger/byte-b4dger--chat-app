@@ -15,7 +15,7 @@ const App = () => {
 
   useEffect(() => {
     alert(
-      'Dane do logowania:\nemail: kasia@example.com hasło: kasia1;\nemail: basia@example.com hasło: basia1;\nemail: austin@example.com hasło: austin'
+      'Dane do logowania:\nemail: tomek@example.com hasło: tomek1;\nemail: filip@example.com hasło: filip1;\nemail: austin@example.com hasło: austin'
     );
   }, []);
 
