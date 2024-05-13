@@ -122,9 +122,6 @@ const Chat = () => {
               <p>Lorem ipsum dolor sit amet.</p>
             </div>
           </div>
-          <div className="right">
-            <Detail />
-          </div>
         </div>
       </div>
       <div className="center">
