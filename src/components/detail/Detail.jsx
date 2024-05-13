@@ -36,14 +36,7 @@ const Detail = () => {
 
   return (
     <div className="detail">
-      <div className="user">
-        <img src={user?.avatar || './avatar.png'} alt="" />
-        <h2>{user?.username}</h2>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
       <div className="info">
-        <div className="option"></div>
-
         <button onClick={handleBlock}>
           {isCurrentUserBlocked
             ? 'You are Blocked!'
