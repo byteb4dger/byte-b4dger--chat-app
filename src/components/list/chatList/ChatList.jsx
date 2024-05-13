@@ -86,31 +86,35 @@ const ChatList = () => {
           onClick={() => setAddMode((prev) => !prev)}
         />
       </div>
-      {filteredChats.map((chat) => (
-        <div
-          className="item"
-          key={chat.chatId}
-          onClick={() => handleSelect(chat)}
-          style={{ backgroundColor: chat?.isSeen ? 'transparent' : '#5183fe' }}
-        >
-          <img
-            src={
-              chat.user.blocked.includes(currentUser.id)
-                ? './avatar.png'
-                : chat.user.avatar || './avatar.png'
-            }
-            alt=""
-          />
-          <div className="texts">
-            <span>
-              {chat.user.blocked.includes(currentUser.id)
-                ? 'User'
-                : chat.user.username}
-            </span>
-            <p>{chat.lastMessage}</p>
+      <div className="accounts">
+        {filteredChats.map((chat) => (
+          <div
+            className="item"
+            key={chat.chatId}
+            onClick={() => handleSelect(chat)}
+            style={{
+              backgroundColor: chat?.isSeen ? 'transparent' : '#5183fe',
+            }}
+          >
+            <img
+              src={
+                chat.user.blocked.includes(currentUser.id)
+                  ? './avatar.png'
+                  : chat.user.avatar || './avatar.png'
+              }
+              alt=""
+            />
+            <div className="texts">
+              <span>
+                {chat.user.blocked.includes(currentUser.id)
+                  ? 'User'
+                  : chat.user.username}
+              </span>
+              <p>{chat.lastMessage}</p>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
 
       {addMode && <AddUser />}
     </div>
