@@ -12,6 +12,7 @@ import { db } from '../../lib/firebase';
 import { useChatStore } from '../../lib/chatStore';
 import { useUserStore } from '../../lib/userStore';
 import upload from '../../lib/upload';
+import Detail from '../detail/Detail';
 
 const Chat = () => {
   const [chat, setChat] = useState();
@@ -114,10 +115,15 @@ const Chat = () => {
     <div className="chat">
       <div className="top">
         <div className="user">
-          <img src={user?.avatar || './avatar.png'} alt="" />
-          <div className="texts">
-            <span>{user?.username}</span>
-            <p>Lorem ipsum dolor sit amet.</p>
+          <div className="left">
+            <img src={user?.avatar || './avatar.png'} alt="" />
+            <div className="texts">
+              <span>{user?.username}</span>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div className="right">
+            <Detail />
           </div>
         </div>
       </div>
